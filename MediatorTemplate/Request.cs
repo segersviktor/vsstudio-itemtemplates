@@ -12,6 +12,5 @@ namespace $rootnamespace$
 /// </summary>
 public class $safeitemname$ : IRequest<$userinput$Response>
 {
-    $safeitemname$
 }
 }
