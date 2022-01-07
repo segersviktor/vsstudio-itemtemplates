@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData> 
+		<Name>Mediator</Name>
+		<Description>Create the request, handler and response blueprint for the Mediator library.</Description>
+		<Icon>MediatorTemplate.ico</Icon>
+		<TemplateID>33ef0b6d-11f0-4983-9db6-f98ec94df8fa</TemplateID>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<DefaultName>Handler.cs</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>System</Assembly>
+			</Reference>
+		</References>
+		<CustomParameters>
+			<CustomParameter Name="$userinput$" Value="$fileinputname$"/>
+		</CustomParameters>
+		<ProjectItem TargetFileName="$fileinputname$RequestHandler.cs" ReplaceParameters="true">Handler.cs</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$Request.cs" ReplaceParameters="true">Request.cs</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$Response.cs" ReplaceParameters="true">Response.cs</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
