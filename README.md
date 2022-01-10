@@ -1,3 +1,3 @@
 # vsstudio-itemtemplates
-Item templates for visual studio iclude:
+Item templates for visual studio include:
 - Mediator handler template
